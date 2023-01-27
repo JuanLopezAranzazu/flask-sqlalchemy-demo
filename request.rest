@@ -1,0 +1,35 @@
+@api = http://localhost:5000
+
+###
+
+GET {{api}}/products
+
+###
+
+GET {{api}}/products/1
+
+###
+
+POST {{api}}/products
+Content-Type: application/json
+
+{
+  "name": "test",
+  "description": "test",
+  "price": 42246
+}
+
+###
+
+PUT {{api}}/products/1
+Content-Type: application/json
+
+{
+  "name": "test",
+  "description": "test",
+  "price": 42246
+}
+
+###
+
+DELETE {{api}}/products/1
